@@ -1,0 +1,99 @@
+/* * {
+  margin: 0px;
+  padding: 0px;
+  color: blue;
+}
+li {
+  color: red;
+}
+
+/* p:nth-of-type(2n){
+    color: green;
+} */
+/* #container div:first-child :nth-child(2){
+    color: green;
+} */
+/* #container div:first-child .cool-style {
+  color: aqua;
+} */
+
+/* .cool-style {
+  background-color: aqua;
+/* } */
+
+* {
+  margin-top: 30px;
+  background-color: rgb(169, 198, 199);
+}
+header {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 0;
+}
+h4 {
+  margin-top: 0;
+}
+h2 {
+  padding: 30px;
+  background-color: rgb(141, 195, 196);
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.personal-info {
+  list-style: none;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.personal-info li {
+  display: inline;
+  margin-right: 30px;
+  padding: 20px;
+  background-color: rgb(141, 195, 196);
+  font-size: 25px;
+}
+.personal-detail {
+  overflow: hidden;
+  margin: 80px;
+  width: 80%;
+}
+.personal-detail div {
+  width: 50%;
+  float: left;
+  display: inline;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.personal-detail div p {
+  padding: 30px 20px;
+  border-style: dashed;
+}
+
+.education {
+  display: inline-block;
+  margin-left: 50px;
+  border: dashed;
+  padding: 20px;
+}
+.experience {
+  display: inline-block;
+  margin-left: 230px;
+  border: dashed;
+  padding: 20px;
+}
+
+.hobbies {
+  text-align: center;
+}
+
+.hobbies li {
+  display: inline-block;
+  height: 30px;
+  width: 100px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  text-align: center;
+}
