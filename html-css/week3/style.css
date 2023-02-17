@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: rgb(207, 207, 207);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+main {
+  padding: 1.5em;
+  width: 55%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+form {
+  width: 100%;
+  background-color: white;
+}
+#summary {
+  width: 100%;
+  background: linear-gradient(90deg, #fd7b46, #fe4e9b);
+  color: white;
+  margin: 0px;
+  padding: 0 20px;
+}
+#summary h2 {
+  padding: 6px 6px;
+}
+
+#summary div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px 6px;
+}
+
+#summary #total-1 {
+  border-bottom: 2px solid white;
+}
+#payment {
+  width: 100%;
+}
+h3 {
+  text-align: center;
+  color: black;
+  padding: 40px 0px;
+}
+
+.payment-methods {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2px;
+  padding: 0 10px;
+}
+
+.payment-methods label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+input[id="visacard"],
+input[id="paypal"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+[type="radio"]:checked + div {
+  outline: 4px solid #fe4e9b;
+}
+
+.radio-button {
+  width: 80%;
+  height: 130px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 40%);
+}
+.card-img {
+  width: 138px;
+}
+.paypal-img {
+  width: 100px;
+  height: 60px;
+}
+.payment-text {
+  color: gray;
+  font-weight: bold;
+}
+
+.card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.date-container {
+  width: 100%;
+  padding: 0px 5px;
+  text-align: center;
+}
+
+input[id="e-date"],
+input[id="s-code"] {
+  width: 60%;
+}
+#Security-code,
+#card-number {
+  display: flex;
+  flex-direction: row;
+}
+.question-mark {
+  width: 24px;
+  height: 24px;
+  margin-left: -30px;
+}
+#confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding-top: 20px;
+}
+.buy-button {
+  color: white;
+  font-weight: bold;
+  width: 310px;
+  height: 70px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #fd7b46, #fe4e9b);
+}
+#confirm a {
+  text-decoration: none;
+  padding: 20px 0;
+  background: linear-gradient(9deg, #fe4e9b 30%, #fd7b46 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+  .card-info {
+    flex-direction: column;
+  }
+  .payment-methods label {
+    flex-direction: column;
+    width: 80%;
+  }
+}

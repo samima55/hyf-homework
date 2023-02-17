@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HOME WORK WEEK 3</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>Payment Request</h2>
+      </header>
+      <form action="get">
+        <!-- summary part starts -->
+        <div id="summary">
+          <h2>Order summary</h2>
+          <div id="total-1">
+            <p>Total</p>
+            <p>$333/ month</p>
+          </div>
+          <div id="total-2">
+            <p>Total</p>
+            <p>$100</p>
+          </div>
+        </div>
+        <!--summary part ends -->
+
+        <!-- payemnt part starts -->
+        <div id="payment">
+          <h3>Payment Method</h3>
+          <div class="payment-methods">
+            <label>
+              <input type="radio" id="visacard" checked />
+              <div class="radio-button">
+                <img
+                  src="card.png"
+                  class="card-img"
+                  alt="cards method imags "
+                />
+                <span class="payment-text">credit / Debit</span>
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" id="paypal" name="paypal" />
+              <div class="radio-button">
+                <img src="paypal.png" class="paypal-img" alt="paypal imags " />
+                <span class="payment-text">PayPal</span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <!-- payment part ends  -->
+
+        <!-- card info starts -->
+        <h3>Card Info</h3>
+        <div class="card-info">
+          <!-- card number starts -->
+          <div class="date-container">
+            <label for="numbers" class="payment-text">Card Number</label>
+            <div id="card-number">
+              <input type="text" placeholder="1234 1234 1234 1234" />
+              <img
+                class="question-mark"
+                src="question-mark.png"
+                alt="question-mark"
+              />
+            </div>
+          </div>
+          <!-- card number ends  -->
+
+          <!-- Expiry-date starts  -->
+          <div class="date-container">
+            <label for="Expiry-date" class="payment-text"> Expiry Date</label>
+            <div id="Expiry-date">
+              <input
+                type="text"
+                name="Expiry-date"
+                id="e-date"
+                placeholder="MM / YY"
+              />
+            </div>
+          </div>
+          <!-- Expiry-date ends  -->
+          <!-- Security-code starts  -->
+          <div class="date-container">
+            <label for="Security-code" class="payment-text"
+              >Security Code</label
+            >
+            <div id="Security-code">
+              <input
+                type="text"
+                name="Security"
+                id="s-code"
+                placeholder="CVV"
+              />
+              <img
+                class="question-mark"
+                src="question-mark.png"
+                alt="question-mark"
+              />
+            </div>
+          </div>
+          <!-- Security-code ends  -->
+        </div>
+        <!-- card-info ends  -->
+        <div id="confirm">
+          <button class="buy-button">Buy Now</button>
+          <a href="#">Need Hlep ?</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
