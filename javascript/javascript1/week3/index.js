@@ -8,7 +8,7 @@ const names = [
     "Rasmus",
     "Samuel",
     "katrine",
-    "Tala",
+    "Tala"
   ];
   const nameToRemove = "Ahmad";
   function nameRemoving(name,names){
