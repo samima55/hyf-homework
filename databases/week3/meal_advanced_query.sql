@@ -20,52 +20,52 @@ SELECT
 FROM
     meal
 WHERE
-    title LIKE 'chicken';
+    title LIKE '%chicken%';
     
-select
+SELECT
    * 
-from
+FROM
    meal 
-where
-   created_date between '2022-05-01' and '2023-05-24';
+WHERE
+   created_date BETWEEN '2022-05-01' AND '2023-05-24';
 
 
-select
+SELECT
    * 
-from
-   meal limit 5;
+FROM
+   meal LIMIT 5;
    
-select
+SELECT
    meal.id,
    meal.title,
    review.title,
    review.description,
    review.stars 
-from
+FROM
    meal 
-   inner join
+   INNER JOIN
       review 
-      on meal.id = review.meal_id 
-where
+      ON meal.id = review.meal_id 
+WHERE
    review.stars >= 3;
    
-select
+SELECT
    meal.id,
    meal.title,
    reservation.id,
    reservation.number_of_guests,
    reservation.created_date 
-from
+FROM
    reservation 
-   inner join
+   INNER JOIN
       meal 
-      on reservation.meal_id = meal.id 
-where
+      ON reservation.meal_id = meal.id 
+WHERE
    meal.id = 4
-order by
+ORDER BY
    reservation.created_date ASC;
    
-SELECT review.meal_id,meal.title ,meal.description,AVG(stars) as avg_stars
+SELECT review.meal_id,meal.title ,meal.description,AVG(stars) AS avg_stars
 FROM meal
 JOIN  review ON meal.id=review.meal_id
 GROUP BY meal.id
